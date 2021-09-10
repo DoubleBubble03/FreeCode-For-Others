@@ -3,10 +3,13 @@
 # Window 10
 # USB driver: Microsoft 2006/6/21 10.0.19041.1 
 
+# Environment:
+
+# Window 10
+# USB driver: Microsoft 2006/6/21 10.0.19041.1 
+
 from ctypes import *
-import ctypes
 import os
-import numpy as np
 
 from ctypes.wintypes import BOOL, DWORD, HANDLE
 
@@ -43,11 +46,11 @@ print("The value_open_device_two is ",value_open_device_two)
 
 ch_one = DWORD()
 data_range_one = DWORD()
-out_value_one = ctypes.c_double(0)
+out_value_one = c_double(0)
 
 ch_two = DWORD()
 data_range_two = DWORD()
-out_value_two = ctypes.c_double(0)
+out_value_two = c_double(0)
 
 out_all_value_one = (c_double * 8) ()
 out_all_value_two = (c_double * 8) ()
@@ -141,6 +144,10 @@ if value_handle_two !=0:
     value_close_device_two = mydll.close_device(value_handle_two)
     print('This is the value of value_handle', value_handle_two)
     print("The value_close_device_two is ",value_close_device_two)
+
+
+
+
 
 
 
