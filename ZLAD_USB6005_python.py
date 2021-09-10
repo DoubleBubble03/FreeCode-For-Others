@@ -1,3 +1,8 @@
+# Environment:
+
+# Window 10
+# USB driver: Microsoft 2006/6/21 10.0.19041.1 
+
 from ctypes import *
 import ctypes
 import os
