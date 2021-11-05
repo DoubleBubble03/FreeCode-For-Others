@@ -9,6 +9,7 @@ import os
 from ctypes.wintypes import BOOL, DWORD, HANDLE
 
 # 此处根据电脑配置进行选择 x64 or x86
+
 CUR_PATH=os.path.dirname('x64/')
 dllPath=os.path.join(CUR_PATH,"FTAPI.dll")
 mydll = windll.LoadLibrary(dllPath)
